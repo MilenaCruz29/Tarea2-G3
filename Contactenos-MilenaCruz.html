@@ -12,8 +12,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
+<style>
+    #contactenos{
+    width: 70%;
+    margin:auto;
+    -webkit-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.67);
+    margin: auto;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.comunicacion img{
+    width:40px;
+    height: 40px;
+}
+.comunicacion{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100px;
+}
+
+#canales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    gap: 10px 30px;
+    height: 500px;
+
+}
+
+
+.form-contact {
+    background-color: #B3773B;
+    width: 70%;
+    margin: auto;
+    position: absolute;
+    transform:translate(-50%, -50%) ;
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, .8);
+}
+.contact {
+    padding: .8rem;
+    overflow: hidden;
+    color: black;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact label, .contact input, .contact textarea{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 10px;
+}
+.contact label{
+
+    font-weight: 700;
+}
+.contact input:not([type='submit']), .contact textarea{
+    border: none;
+    background: #d9b897;
+    border-bottom: 5px solid rgb(150, 53, 53);
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+}
+.contact textarea{
+    min-height: 100px;
+}
+
+</style>
 
 <body>
 
@@ -36,40 +109,42 @@
             <h2>Contáctenos</h2>
                 <div id="canales" style=" background-color:#CE9D6C; align-content: center width: 80% ;height:400px; margin: auto ;">
                     <div class="comunicacion">
-                        <h3 >Al correo Electrónico</h3>
+                        <h3 >Email</h3>
                         <img src="img/correo1.png" alt="correo"/>
                         <p style="font-family: Arial, Helvetica, sans-serif;"><b>Escribenos</b></p>
-                        <a href="#">contacto@Mycake.com.exe</a>
+                        <br/><a class="button" href="#" >contacto@Mycake.com.exe</a>
                     </div>
                     <div class="comunicacion">
                         <h3>Llámanos</h3>
                         <img src="img/llamadas.png" alt="llamadas"/>
                         <p style="font-family: Arial, Helvetica, sans-serif;"><b>Telefono: 04258934 </b></p>
-                        <a href="#">Llamada</a>
+                        <br/><a class="button" href="#" >Llamada</a>
                     </div>
                     <div class="comunicacion">
-                        <h3>Chat</h3>
+                        <h3>Mensaje</h3>
                         <img src="img/chat.png" alt="chat"/>
-                        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Web Panaderia</b></p>
-                        <a href="#">Abrir chat</a>
+                        <p style="font-family: Arial, Helvetica, sans-serif;"><b>Chat</b></p>
+                        <br/><a class="button" href="#" >Chat</a>
                     </div>
-                </div>
-            <div>
-                <form style="background-color: #B3773B">
-                    <h3>Recomendaciones</h3>
-                    <label for="iname"><i>Nombres:</i></label>
-                    <input id="iname" type="text" name="name"><br/>
-                    <br><label for="isurname"><i>Apellido:</i></label>
-                    <input id="isurname" type="text" name="surname"><br/>
-                    <br><label for="iemail"><i>Correo Electronico:</i></label>
-                    <input id="iemail" type="text" name="email">
-                    <h4>Opinión</h4>
-                    <label for="mensaje"> Mensaje </label> <br/>
-                    <textarea id="mensaje" placeholder="Escriba su recomendacion aqui"></textarea>
-                    <br/><a class="button" href="#" >Enviar</a><br/><br/><br/>
+                </div>  
+                <form action="" class="contact">
+                    <h2>Recomendaciones</h2>
+                    <label for="nombres">Nombre</label>
+                    <input type="text" name="nombres" id="nombres">
+        
+                    <label for="correo">Correo</label>
+                    <input type="text" name="correo" id="correo">
+        
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular">
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    <br/><a class="button" href="#" >Enviar</a>
+        
                 </form>
-            </div>
         </section>
+
 
     <footer class="footer" style="color: #414141">
 
